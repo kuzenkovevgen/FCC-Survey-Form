@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Russo+One&display=swap");
+body {
+  font-family: "Russo One";
+}
+header {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  position: relative;
+  margin: 0px;
+  border-radius: 10px;
+  color: rgb(100, 253, 253);
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 2px;
+  padding-bottom: 1px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+}
+h1 {
+  margin: 1px;
+}
+header > p {
+  margin: 5px;
+  font-size: 12px;
+}
+form {
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  border-radius: 4px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(204, 99, 99, 0.1);
+  align-items: center;
+  font-size: 18px;
+  width: 100%;
+  margin: 1rem auto 0 auto;
+}
+.bg {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(0, 2, 0, 0.938)
+    ),
+    url(img/tekstura.jpg);
+  content: "";
+  background-size: cover;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(7px);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+.block {
+  color: rgb(198, 255, 255);
+  padding: 5px;
+  margin: 0.1rem 1.5rem;
+  padding: 0.25rem;
+}
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  margin: 0;
+  line-height: inherit;
+  font-size: inherit;
+  border: none;
+  border-radius: 3px;
+}
+@media (min-width: 420px) {
+  form {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 800px) {
+  form {
+    max-width: 600px;
+  }
+}
+button {
+  display: block;
+  width: 100%;
+  background-color: lawngreen;
+}
+
+textarea,
+select,
+#name,
+#email,
+#number {
+  width: 100%;
+}

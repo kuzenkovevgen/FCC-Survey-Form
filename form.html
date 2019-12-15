@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description"><i>Thanks You for Your support</i></p>
+    </header>
+    <main>
+      <form action="" id="survey-form">
+        <div class="block">
+          <label for="name" id="name-label">Name:</label>
+          <input type="text" id="name" required placeholder="Evgeny" />
+        </div>
+        <div class="block">
+          <label for="mail" id="email-label">Mail:</label>
+          <input type="email" id="email" required placeholder="kem92@mail.ru" />
+        </div>
+        <div class="block">
+          <label for="number" id="number-label">Age (optional):</label>
+          <input type="number" id="number" min="7" max="100" placeholder="27" />
+        </div>
+
+        <div class="block">
+          <label for="dropdown" id="dropdown-label">
+            Choose your type of activity:
+          </label>
+          <select name="dropdown" id="dropdown">
+            <option disabled>Choose your type of activity</option>
+            <option value="student">Student</option>
+            <option value="main-job">Main-Job</option>
+            <option value="freelancer">FreeLancer</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="block">
+          <label for="recom" id="recom-label">
+            Can you recommend this resource?
+          </label>
+          <input type="radio" name="recom" id="yes" value="yes" />Yes <br />
+          <input type="radio" name="recom" id="maybe" value="maybe" />MayBe
+          <br />
+          <input type="radio" name="recom" id="not" value="not" />Not Sure
+          <br />
+        </div>
+
+        <div class="block">
+          <label for="methods">
+            What methods do you use to study?
+          </label>
+          <input
+            type="checkbox"
+            name="methods"
+            id="youtube"
+            value="youtube"
+          />YouTube <br />
+          <input type="checkbox" name="methods" id="books" value="books" />Books
+          <br />
+          <input
+            type="checkbox"
+            name="methods"
+            id="courses"
+            value="courses"
+          />Courses <br />
+          <input type="checkbox" name="methods" id="apps" value="apps" />Mobile
+          Apps <br />
+        </div>
+
+        <div class="block">
+          <label for="review">
+            Leave your review:
+          </label>
+          <textarea name="review" id="" cols="20" rows="7"></textarea>
+          <br />
+        </div>
+        <div class="block">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+    <div class="bg"></div>
+  </body>
+</html>
